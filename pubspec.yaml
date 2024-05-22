@@ -1,0 +1,20 @@
+name: time_duration_picker
+description: "Widget to allow user to select a time and a duration"
+version: 0.0.1
+homepage: https://github.com/jpalmer42/time_duration_picker
+repository: https://github.com/jpalmer42/time_duration_picker
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
