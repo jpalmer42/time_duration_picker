@@ -11,25 +11,34 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Use this Widget where you need to Collect or Show Time and Duration.
+Widget uses the Horizontal Slider
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Specify:
+* initial TimeOfDay
+* Time Range
+* Minimum and Maximum Duration.
+* Initial Duration.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```dart
+import { TimeDurationPicker } from 'com.androidpigeon.widget.time_duration_picker';
 
 ## Usage
+TimeDurationPicker(
+    timeInitial?: TimeOfDay.now(),
+    timeInterval?: const Duration(minutes: 30),
+    timeRange?: [startTimeOfDay, endTimeOfDay],
+    durationInterval?: const Duration(minutes: 5),
+    durationInitial?: const Duration(hours: 2),
+    durationRange?: [const Duration(hours: 0), const Duration(hours: 2)],
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+    
+)
 
-```dart
-const like = 'sample';
 ```
 
 ## Additional information
