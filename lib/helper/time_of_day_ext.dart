@@ -24,6 +24,7 @@ extension DurationExtension on Duration {
   int get minutes => inMinutes - (inHours * 60);
 
   String format(BuildContext context) {
-    return '${inHours}h:${minutes}m';
+    final min = '$minutes'.padLeft(2, '0');
+    return '${inHours}h:${min}m';
   }
 }
